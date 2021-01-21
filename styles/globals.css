@@ -14,15 +14,3 @@ a {
 * {
   box-sizing: border-box;
 }
-
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.login-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
