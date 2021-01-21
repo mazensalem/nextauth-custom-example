@@ -25,7 +25,6 @@ const options = {
   ],
   pages: {
     signIn: "/signin",
-    newUser: "/",
   },
   database: {
     type: "sqlite",
