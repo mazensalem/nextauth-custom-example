@@ -1,5 +1,5 @@
 import React from "react";
-import { providers, signIn, getSession, csrfToken } from "next-auth/client";
+import { getProviders, signIn, getSession, getCsrfToken } from "next-auth/client";
 import {
   Box,
   Button,
@@ -59,7 +59,7 @@ SignIn.getInitialProps = async (context) => {
 
   return {
     session: undefined,
-    providers: await providers(context),
-    csrfToken: await csrfToken(context),
+    providers: await getProviders(context),
+    csrfToken: await getCsrfToken(context),
   };
 };
